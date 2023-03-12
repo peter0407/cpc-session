@@ -34,5 +34,15 @@ using namespace std;
 
 int main() {
     Fast;
+    int arr[26] = {0};
+    string s;
+    cin >> s;
+    for (size_t i = 0; i < s.size(); i++)
+    {
+        arr[s[i]-'a']++;
+    }
+    sort(arr, arr + 26);
+    reverse(arr, arr + 26);
 
+    cout << arr[0];
 }
